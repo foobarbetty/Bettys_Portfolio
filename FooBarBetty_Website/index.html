@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <!-- ============================================================================
 Author: Elisabete Vail 
-Date: June 2014
-Project: Foo Bar Website (Mono Color Scheme)
+Date: July 3, 2014
+Project: Experimenting with the FooBar Website Layout
 ============================================================================= -->
 <html>
     <head>
@@ -22,6 +22,7 @@ Project: Foo Bar Website (Mono Color Scheme)
  				//Otherwise if section is closed, close all other sections before opening
  				else if(sectionNum.className=="divHidden"){
  					intro.className="divHidden";
+ 					foo_what.className="divHidden";
  					about_me.className="divHidden";
  					resume.className="divHidden";
  					contact.className="divHidden";
@@ -52,8 +53,8 @@ Page Header
 Circle Buttons Section
 ============================================================================= -->
 <div id="circle_buttons">
-<ul id="cb">
-	<li id="c1"><a href="#foowhat_content">FooWhat?</a></li>	
+<ul id="cb">	
+	<li id="c1"><button class="round-button" type=button onclick="return ColExp('foo_what')">FooWhat?</button></li>
 	<li id="c2"><button class="round-button" type=button onclick="return ColExp('about_me')">About Me</button></li>
 	<li id="c3"><button class="round-button" type=button onclick="return ColExp('resume')">Resume</button></li>
 	<li id="c4">
@@ -69,7 +70,7 @@ Intro Section
 <div id="intro" class="divVisible">
 	<h2>Hey there! How’s it going?</h2>
 	<p>
-		I’m Elisabete (pronounced eee-lisa-bet), also known as “Betty” and you’ve just stumbled upon my <a onclick="return ColExp('resume')">virutal resume</a>.
+		I’m Elisabete (pronounced eee-lisa-bet), also known as “Betty” and you’ve just stumbled upon my virtual <a href="https://github.com/foobarbetty" target="_blank">portfolio</a> and <a onclick="return ColExp('resume')">resume</a>.
 		<br><br>
 		Much like the universal Computer Science identifier, "FooBar", I'm not hung up on titles and my skillset continues to evolve.
 		That said, writing computer code to build tools that solve problems, is what I do best. 
@@ -82,24 +83,21 @@ Intro Section
 <!-- ============================================================================
 FooWhat Section
 ============================================================================= -->
-<div id="foowhat" class="divVisible">
 
-<!-- Modal Content -->
-	<div id="foowhat_content" class="modalDialog"><div>
-   		<a href="#close" title="Close" class="close">✕</a>
-    	<img src="images/Mint_FooBar_Definition.png" alt="FooWhat" width="100%"/>
-	</div></div>
-
-</div><!-- end of foowhat section-->
 
 <!-- ============================================================================
 About Me Content
 ============================================================================= -->
 <!-- This section will expand/collapse -->
+<div id="foo_what" class="divHidden">
+<img src="images/FooWhat.png" alt="Foo What?" width="100%"/>
+</div><!-- end of foowhat -->
+
+<!-- This section will expand/collapse -->
 <div id="about_me"class="divHidden">
 <div id="about_me_1">
-<p><h2>About Me</h2>
-<br>Since graduating with a degree in Computer Science and Biology, I’ve worked within the Boston software scene as an R programmer, Report Developer, Tech Support Engineer and now as a Data Quality Analyst.<br>
+<h2>About Me</h2>
+<p>Since graduating with a degree in Computer Science and Biology, I’ve worked within the Boston software scene as an R programmer, Report Developer, Tech Support Engineer and now as a Data Quality Analyst.<br>
 <br>Before then, I crewed on Tall Ships and restored wooden boats. Follow my journey by clicking on the Numbered links below!<br><br>
 </p>	
 </div><!-- end of about_me_1 -->
@@ -170,7 +168,8 @@ Resume Content
 </div>
 
 <!-- Experience Section -->
-<div id="exp"><h4>Click Job Titles to Expand</h4>
+<div id="exp">
+	<h4>Click Job Titles to Expand</h4>
 	<div id="col_1"><img src="images/mint_riveter_1.png"/></div>
 	<div id="col_2">
 		<!-- Job 0 -->
@@ -309,7 +308,9 @@ Page Footer
 	<li id="s2"><button class="soc-button" type=button onclick="window.open('https://plus.google.com/+FooBarBettyEVail/posts','_blank')">
 		<img src="images/icon_gplus_wht.png" alt="gplus" width="100">
 	</button></li>
-	<li id="s3"><p>website <- madeFromScratch.FooBar(Betty);</p></li>
+	<li id="s3"><a href="https://github.com/foobarbetty/Bettys_Portfolio/tree/master/FooBarBetty_Website" target="_blank">
+		<p>website <- madeFromScratch.FooBar(Betty);</p>
+	</a></li>
 	<li id="s4"><button class="soc-button" type=button onclick="window.open('https:www.linkedin.com/in/foobarbetty','_blank')">
 		<img src="images/icon_link_wht.png" alt="linkedIn" width="100">
 	</button></li>	

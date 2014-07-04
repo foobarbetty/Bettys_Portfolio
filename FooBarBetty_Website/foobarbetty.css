@@ -1,7 +1,7 @@
 /* ----------------------------------------------------
 Author: Elisabete Vail 
-Date: June 2014
-Project: Foo Bar CSS (Mono Color Scheme)
+Date: July 3, 2014
+Project: Experimenting with the FooBar Website Layout
 
 Color Codes: 
 	White: 		FFFFFF		255,255,255
@@ -21,7 +21,7 @@ body,div,h2,form,input,textarea{
 }
 html{height: 100%;}
 body{
-	width: 90%;
+	width: 65%;
 	margin: 2% auto;
 	padding: 0%;
 	background-color: #FFFFFF;
@@ -111,8 +111,8 @@ Circle Buttons
 #cb li a {display: block; margin: 0 auto;}
 #cb li button {display: block; margin: 0 auto;}
 .round-button{
-    width: 12vw;
-    height: 12vw;
+    width: 10vw;
+    height: 10vw;
     border: 0;
     border-radius: 50%;
     text-align:center;
@@ -127,47 +127,20 @@ Circle Buttons
     transition: font-size .05s linear;
 }
 @media screen and (min-width: 800px){ .round-button{font-size: 1.5vw;}}
-#cb a{ 
-    display:block;
-    width: 12vw;
-    height: 12vw;
-    line-height: 12vw;
-    border: 0;
-    border-radius: 50%;
-	text-decoration: none;
-    text-align:center;
-    white-space: nowrap;
-    font-style: normal;
-    font-size: 1.5vw;
-    color: #FFFFFF;
-	-webkit-transition: font-size .05s linear;  
-    -moz-transition: font-size .05s linear;  
-    -o-transition: font-size .05s linear;  
-    -ms-transition: font-size .05s linear;  
-    transition: font-size .05s linear;
-}
-@media screen and (min-width: 800px){ #cb a{font-size: 1.5vw;}}
-#c1 a, #c5 button {background: #90A8A8;}
+@media screen and (min-width: 800px){ #cb button{font-size: 1.5vw;}}
+#c1 button, #c5 button {background: #90A8A8;}
 #c2 button, #c4 button {background: #C0D8D8; color: #607878;}
 #c3 button{background: #E0F0F0; color: #607878;}
 
 /* Turn shades of papaya on hover*/
-#c1 a:hover, #c5 button:hover{cursor: pointer; background: #FF6868;}
+#c1 button:hover, #c5 button:hover{cursor: pointer; background: #FF6868;}
 #c2 button:hover, #c4 button:hover{cursor: pointer; background: #FFB8B8; color: #FFFFFF;}
 #c3 button:hover{cursor: pointer; background: #FFE8E8; color:#FF6868;}
 
 /* --------------------------
 FooWhat Section
 --------------------------*/
-#foowhat{overflow: hidden;}
-#foowhat .modalDialog:target {background: rgba(224,240,240,0.7);  pointer-events: auto;}
-#foowhat .modalDialog > div {
-	width: 70%; 
-	position: relative; 
-	margin: 17% auto 0% auto;
-}
-#foowhat .close{background:#C0D8D8;}
-#foowhat .close:hover{background:#FFB8B8;}
+#foo_what img{width: 90%; padding: 1% 5%;}
 
 /* --------------------------
  About Me Section
@@ -185,9 +158,9 @@ FooWhat Section
 /* Create World Map Buttons */
 #about_me_2 a{
     display:block;
-    width: 4vw;
-    height: 4vw;
-    line-height: 4vw;
+    width: 3vw;
+    height: 3vw;
+    line-height: 3vw;
     border: 0;
     border-radius: 50%;
 	text-decoration: none;
@@ -214,16 +187,13 @@ FooWhat Section
 /* --------------------------
  Resume Section
  --------------------------*/
-#resume img {width: 14vw;}
+#resume img {width: 100%;}
 #res_1, #exp_1 {width: 100%; text-align: right;}
 #tools, #exp, #ed  {
     width: 100%; 
     border: none;
     padding-top: 2vw; 
     overflow: hidden;
-    -moz-border-radius: 0.5vw;
-    -webkit-border-radius: 0.5vw;
-    border-radius: 0.5vw;
 }
 #tools a, #exp h4 {float: right; padding-right: 2.5vw; margin: 0;}
 #tools:hover a, #exp:hover h4{color: #FF6868;}
@@ -238,7 +208,7 @@ FooWhat Section
     cursor: pointer;
 }
 #exp h4{
-    background: url('images/expand_arrow_mint4.png');
+    background: url('images/expand_arrow_mint3.png');
     background-position: top right;
     background-repeat: no-repeat;
     background-size: 1.5vw 1.5vw;
@@ -247,7 +217,7 @@ FooWhat Section
     background-image: url('images/expand_arrow_papaya3.png');
     cursor: default;
 }
-#col_1 {width: 15vw; padding-left: 1vw; float: left; overflow: hidden;}
+#col_1 {width: 16%; padding-left: 1vw; float: left; overflow: hidden;}
 #col_2 {width: 80%; padding-left: 1vw; float: left; overflow: hidden;}
 #col_a {width: 10vw; float: left;}
 #col_b {overflow: hidden;}
@@ -264,6 +234,10 @@ Contact Section
     padding:0%;
     margin: 0% auto;    
     position:relative;
+}
+#contact form{
+    width: 100%;
+    height: 16vw;
 }
 #contact input, #contact textarea {
     width:98%;
@@ -294,7 +268,7 @@ Contact Section
     border:none;
     margin-bottom: 3%;
 }
-#contact #submit:hover { background: #FFB8B8; color: #FFFFFF;}
+#contact #submit:hover { background: #FFB8B8; color: #FFFFFF; cursor: pointer;}
 ::-webkit-input-placeholder { color: #607878;}
 :-moz-placeholder { color: #607878;}
 ::-moz-placeholder { color: #607878;}
@@ -304,10 +278,20 @@ Contact Section
 Footer
 --------------------------*/
 footer{margin: 0% auto; padding-bottom: 2%;}
-#soc_icons{position: relative; padding: 0; display: table; width: 100%;}
-#soc_icons li {display: table-cell;vertical-align: middle; }
-#soc_icons li button {display: block; margin: 0 auto; background: #90A8A8; width: 100%;}
-#soc_icons img{width: 100%;vertical-align: middle;}
+#soc_icons{
+    padding: 0; 
+    display: table; 
+    width: 100%;
+    position:relative;
+}
+#soc_icons li {display: table-cell; vertical-align: middle; }
+#soc_icons li button {
+    display: block; 
+    margin: 0 auto; 
+    background: #90A8A8; 
+    width: 100%;
+}
+#soc_icons img{width: 100%; vertical-align: middle;}
 #soc_icons .soc-button{
 	display: block;
     width: 4vw;
@@ -317,13 +301,13 @@ footer{margin: 0% auto; padding-bottom: 2%;}
     border-radius: 50%;
     text-align:center;
     white-space: nowrap;
+    position: relative;
 }
 #soc_icons button:hover{background: #FF6868; cursor: pointer;}
 #soc_icons p{font-weight: bold; font-size: 85%;text-align: center;}
 #soc_icons a{color: #90A8A8;}
 #soc_icons a:hover{color: #FF6868;	cursor: pointer;}
-#s3 a{font-style: bold; font-size: 1.5vw;}
-#s1 button, #s2 button {float: right;}
+#s3 a{font-style: bold; font-size: 110%; text-align: center;}
 #s3 {width: 40%; white-space: nowrap;}
 
 
