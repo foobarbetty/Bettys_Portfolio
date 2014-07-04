@@ -1,7 +1,7 @@
 /* ----------------------------------------------------
 Author: Elisabete Vail 
 Date: July 3, 2014
-Project: Experimenting with the FooBar Website Layout
+Project: FooBarBetty Website
 
 Color Codes: 
 	White: 		FFFFFF		255,255,255
@@ -10,11 +10,10 @@ Color Codes:
 	Mint_2: 	C0D8D8;		192,216,216
 	Mint_3: 	90A8A8;		144,168,168
 	Mint_4: 	607878;		96,120,120
-	Papaya_1:   FFE8E8;		255,232,232
-	Papaya_2:   FFB8B8; 	255,184,184
-    Papaya_3:   FF9090;     255,144,144
-	Papaya_4:   FF6868;		255,104,104
-    Test_Color: EB593C;     235,89,60
+	Papaya_1:   	FFE8E8;		255,232,232
+	Papaya_2:   	FFB8B8; 	255,184,184
+    	Papaya_3:   	FF9090;     	255,144,144
+	Papaya_4:   	FF6868;		255,104,104
 ---------------------------------------------------- */
 body,div,h2,form,input,textarea{
     margin: 0%; padding: 0%; border: 0%; outline: none;
