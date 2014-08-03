@@ -1,9 +1,12 @@
-Bettys_Portfolio
-================
+Hey there! How's it going? 
 
-R, SQL and Javascript... Oh My: Samples of past coding projects
+I’m Elisabete (pronounced eee-lisa-bet), also known as “Betty”. Welcome to my GitHub Repository!
 
-Want to see a sample of my coding work? Well, you've come to the right place. Within this repository you'll find samples of my previous projects, divided up into Language/Project specific sub-directories.
+I'm passionate about using my programming skills to transform complex, messy datasets into visual formats that are both easy on the eyes and the brain. So far I've done this primarily through the statistical programming language and environment known as R, SQL and JasperSoft iReport. 
 
-If you like the way I've done something, then by all means "Leverage Away". I'm also open to suggestions, so please reach out if you have some advice to offer!
+Many titles have been coined to decscribe the work I do, but in reflection of this ever-changing field of "Big Data", I've chosen to go with the Computer Science variable, "FooBar".
 
+Have fun exploring this repository! Please reach out and "Say Hello", if you have questions, suggestions or would simply like to connect!
+
+Elisabete
+www.foobarbetty.com
