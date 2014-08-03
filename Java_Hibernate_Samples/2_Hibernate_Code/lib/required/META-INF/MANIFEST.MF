@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+provider: gradle
+Implementation-Url: http://hibernate.org
+Implementation-Version: 4.1.12.Final
+Implementation-Vendor: Hibernate.org
+Implementation-Vendor-Id: org.hibernate
+Main-Class: org.hibernate.Version
+

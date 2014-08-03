@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="Hockey_player" table="HOCKEY_PLAYER">
+        <meta attribute="class-description">Class with hockey player info</meta>
+        <id name="id" type="int" column="id">
+            <generator class="assigned"/>
+        </id>
+        <property name="firstName" column="firstName" type="string"/>
+        <property name="lastName" column="lastName" type="string"/>
+    </class>
+</hibernate-mapping>
