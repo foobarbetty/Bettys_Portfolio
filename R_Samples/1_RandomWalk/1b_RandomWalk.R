@@ -43,7 +43,7 @@
 	y <- rW_3[100,]		# End Position for each of our 100 Random Walks
 	
 # Save the following graph results as a PDF	
-	pdf(file="1b_RandomWalk.pdf",width=7, height=4)
+	pdf(file="RandomWalk_Graph.pdf",width=7, height=4)
 	
 # Frequency of ending position vs. total distance opportunity	
 	hist(y,x,
