@@ -1,7 +1,7 @@
 /* ----------------------------------------------------
-Author:     Elisabete Vail 
-Date:       September 17, 2014
-Project:    FooBarBetty Website
+Author: Elisabete Vail 
+Date: July 3, 2014
+Project: FooBarBetty Website
 
 Color Codes: 
 	White: 		FFFFFF		255,255,255
@@ -10,17 +10,17 @@ Color Codes:
 	Mint_2: 	C0D8D8;		192,216,216
 	Mint_3: 	90A8A8;		144,168,168
 	Mint_4: 	607878;		96,120,120
-	Papaya_1:   FFE8E8;		255,232,232
-	Papaya_2:   FFB8B8; 	255,184,184
-    Papaya_3:   FF9090;     255,144,144
-	Papaya_4:   FF6868;		255,104,104
+	Papaya_1:   	FFE8E8;		255,232,232
+	Papaya_2:   	FFB8B8; 	255,184,184
+    	Papaya_3:   	FF9090;     	255,144,144
+	Papaya_4:   	FF6868;		255,104,104
 ---------------------------------------------------- */
 body,div,h2,form,input,textarea{
     margin: 0%; padding: 0%; border: 0%; outline: none;
 }
 html{height: 100%;}
 body{
-	width: 75%;
+	width: 65%;
 	margin: 2% auto;
 	padding: 0%;
 	background-color: #FFFFFF;
@@ -49,6 +49,7 @@ a:hover{color: #FF6868; cursor: pointer}
 .divVisible2{display:block;}
 .divHidden2 {display:none;}
 
+
 /* Modal Box */
 .modalDialog {
 	left: 0;
@@ -61,8 +62,6 @@ a:hover{color: #FF6868; cursor: pointer}
 	opacity:0;
 	-webkit-transition: opacity 400ms ease-in;
 	-moz-transition: opacity 400ms ease-in;
-    -o-transition: opacity 400ms ease-in;
-    -ms-transition: opacity 400ms ease-in;
 	transition: opacity 400ms ease-in;
 	pointer-events: none;
 }
@@ -84,8 +83,6 @@ a:hover{color: #FF6868; cursor: pointer}
     font-size: 1.15em;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
-    -o-border-radius: 50%;
-    -ms-border-radius: 50%;
 	border-radius: 50%;
 }
 .close:hover { background: #FFB8B8; color: #FFFFFF;}
@@ -94,7 +91,7 @@ a:hover{color: #FF6868; cursor: pointer}
 Main Container
 --------------------------*/
 #main_container, header, #circle_buttons, #intro, 
-#foowhat, #about_me, #resume, #portfolio, #contact, #footer{
+#foowhat, #about_me, #resume, #contact, footer{
 	width: 100%;
 	margin:0% 0%;
 	padding:0% 0%;
@@ -103,7 +100,7 @@ Main Container
 /* --------------------------
 Header
 --------------------------*/
-header img {width: 75%; border: none;}
+header img {width: 75%;}
 
 /* --------------------------
 Circle Buttons
@@ -229,114 +226,52 @@ FooWhat Section
 #sim a {font-size: 1.5vw;}
 
 /* --------------------------
-Portfolio Section
- --------------------------*/
-#portfolio img { width: 100%;}
-#portfolio b:hover {color: #FF6868; cursor: pointer;}
-#sample_1, #sample_2{overflow: hidden;}
-#sample_1, #sample_2{ 
-    border: 3px solid #E0F0F0;
-    -webkit-border-radius: 0.5vw;
-    -moz-border-radius: 0.5vw;
-    -o-border-radius: 0.5vw;
-    -ms-border-radius: 0.5vw;
-    border-radius: 0.5vw;
-}
-#sample_1:hover, #sample_2:hover{ border: 3px solid #FFB8B8;}
-#s1a, #s2a {width: 74%; float: left;}
-#s1b, #s2b {width: 24%; float: right;}
-#s1b p, #s2b p {text-align: center; color: #607878}
-#sample_1:hover p, #sample_2:hover p {color: #FF6868;}
-#portfolio .gist div{ border: none;}
-#portfolio .gist-syntax{
-    background: #FFFFFF;
-    font-size: 1.15vw;
-    color: #607878;
-    height: 25vw;
-}
-#portfolio .line-numbers {
-    background: #FFFFFF;
-    border: none;
-    color: #607878;
-} 
-#portfolio .gist-meta {
-    background: #FFFFFF;
-    color: #607878;
-    height: 5px;
-}
-#portfolio .gist-meta a{color: #607878;}
-#portfolio .gist-meta a:hover{color: #FF6868;}
-#portfolio a{ margin-top: 10%;}
-#portfolio .modalDialog img{ margin-top: 10%;}
-#portfolio .modalDialog {background: rgba(96,120,120,.7);position: fixed;}
-
-/* --------------------------
 Contact Section
  --------------------------*/
 #contact {
     width:100%;
     padding:0%;
-    margin: 0% auto;   
+    margin: 0% auto;    
+    position:relative;
 }
-#sweet_captcha{
-    display: inline-block;
+#contact form{
     width: 100%;
-    height: 100%;
-    padding-bottom: 3%;
-}
-#puzzle{ max-width: 300px; margin: auto auto;}
-#contact_form{
-    display: inline-block;
-    width: 100%;
-    height: 100%;
+    height: 16vw;
 }
 #contact input, #contact textarea {
-    border: none;
-    padding: 1%;
-    margin: 0.5% auto;
-    -webkit-border-radius: 0.5vw;
-    -moz-border-radius: 0.5vw;
-    -o-border-radius: 0.5vw;
-    -ms-border-radius: 0.5vw;
-    border-radius: 0.5vw;
-    -webkit-box-shadow:none;
-    -moz-box-shadow:none;
-    -o-box-shadow:none;
-    -ms-box-shadow:none;
-    box-shadow:none;
-    float: right;
-}
-#puzzle input{ width:40%; background: #F5F5F5; color: #000000;}
-#puzzle input:hover{background: #FFB8B8; color: #FFFFFF;cursor: pointer;}
-#contact_form input, #contact_form textarea {
     width:98%;
     background: #E0F0F0; 
     color: #607878; 
-    font-family: "Lucida Sans", Lucida, sans-serif;
-    font-weight: normal;
-    font-size: 1.3vw;     
+    font-size: 1.3vw;
+    border: none;
+    padding: 1%;
+    margin: 0.5% auto;
+    -moz-border-radius: 0.5vw;
+    -webkit-border-radius: 0.5vw;
+    border-radius: 0.5vw;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    -o-box-shadow:none;
+    box-shadow:none;
+    float: right;
 }
-#contact_form input:focus, #contact_form textarea:focus {
+#contact input:focus, #contact textarea:focus {
     width:98%;
     background: #FFE8E8; 
     color: #607878;      
 }
-#contact_form #submit {
+#contact #submit {
     width: 25%;
     background: #C0D8D8;
     color:#607878;  
     border:none;
     margin-bottom: 3%;
 }
-#contact_form #submit:hover { 
-    background: #FFB8B8; 
-    color: #FFFFFF; 
-    cursor: pointer;
-}
+#contact #submit:hover { background: #FFB8B8; color: #FFFFFF; cursor: pointer;}
 ::-webkit-input-placeholder { color: #607878;}
-:-ms-input-placeholder { color: #607878;}
-::-moz-placeholder { color: #607878;}
 :-moz-placeholder { color: #607878;}
+::-moz-placeholder { color: #607878;}
+:-ms-input-placeholder { color: #607878;}
 
 /* --------------------------
 Footer
@@ -373,3 +308,7 @@ footer{margin: 0% auto; padding-bottom: 2%;}
 #soc_icons a:hover{color: #FF6868;	cursor: pointer;}
 #s3 a{font-style: bold; font-size: 110%; text-align: center;}
 #s3 {width: 40%; white-space: nowrap;}
+
+
+
+
