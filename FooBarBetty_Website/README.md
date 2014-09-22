@@ -1,10 +1,13 @@
 FooBar(Betty) website
 =========
 
-Well folks... www.foobarbetty.com is FINALLY "finished" and posted for all to see! 
+This website serves two purposes: 
 
-As a way to ramp up on HTML5, CSS3, JavaScript and PHP, I've built everything from scratch and kept it all to just a single HTML and CSS file. 
+* A fun way to keep current with HTML5, CSS3, JavaScript and PHP (I've built everything from scratch)
+* A virtual resume and portfolio
+* 
+I'm continuosly adding new features and have learned so much in the process. As this is an ongoing project, you'll need to go right to the site for the most recent version of source code. Though I will try to update this repository, regularly. 
 
-It took way longer than anticipated (...of course it did) but I'm really proud of the result and learned so much in the process.
+Happy exploring and as always, please don't hesitate to reach out with questions or suggestions.
 
-Happy exploring and as always, please don't hesitate to reach out with suggestions.
+www.foobarbetty.com
