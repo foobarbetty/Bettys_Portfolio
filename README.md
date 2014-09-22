@@ -2,9 +2,9 @@ Hey there! How's it going?
 
 I’m Elisabete (pronounced eee-lisa-bet), also known as “Betty”. Welcome to my GitHub Repository!
 
-I'm passionate about using my programming skills to transform complex, messy datasets into visual formats that are both easy on the eyes and the brain. So far I've done this primarily through the statistical programming language and environment known as R, SQL and JasperSoft iReport. 
+Like the Computer Science variable “FooBar”, the term “Programmer” can represent many concepts. For me, it means using code to build tools that solve problems. 
 
-Many titles have been coined to decscribe the work I do, but in reflection of this ever-changing field of "Big Data", I've chosen to go with the Computer Science variable, "FooBar".
+I'm especially passionate about simplifying complex data into formats that are easy on the eyes AND the brain, and am currently pursuing Software Engineering and Web Development roles with a focus on building tools.
 
 Have fun exploring this repository! Please reach out and "Say Hello", if you have questions, suggestions or would simply like to connect!
 
