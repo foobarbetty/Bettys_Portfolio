@@ -1,6 +1,6 @@
 /* ----------------------------------------------------
 Author:     Elisabete Vail 
-Date:       September 17, 2014
+Date:       April 2015
 Project:    FooBarBetty Website
 
 Color Codes: 
@@ -10,30 +10,30 @@ Color Codes:
 	Mint_2: 	C0D8D8;		192,216,216
 	Mint_3: 	90A8A8;		144,168,168
 	Mint_4: 	607878;		96,120,120
-	Papaya_1:   FFE8E8;		255,232,232
-	Papaya_2:   FFB8B8; 	255,184,184
-    Papaya_3:   FF9090;     255,144,144
-	Papaya_4:   FF6868;		255,104,104
+	Papaya_1:   	FFE8E8;		255,232,232
+	Papaya_2:   	FFB8B8; 	255,184,184
+    	Papaya_3:   	FF9090;     	255,144,144
+	Papaya_4:   	FF6868;		255,104,104
 ---------------------------------------------------- */
 body,div,h2,form,input,textarea{
     margin: 0%; padding: 0%; border: 0%; outline: none;
 }
 html{height: 100%;}
 body{
-	width: 75%;
+	width: 80%;
 	margin: 2% auto;
 	padding: 0%;
 	background-color: #FFFFFF;
 	font-family: "Lucida Sans", Lucida, sans-serif;
-    font-weight: normal;
-	font-size: 1.3vw;
+    	font-weight: normal;
+	font-size: 100%;
 	text-align: justify; 
 	color: #607878;
 	-webkit-transition: font-size .05s linear;  
-    -moz-transition: font-size .05s linear;  
-    -o-transition: font-size .05s linear;  
-    -ms-transition: font-size .05s linear;  
-    transition: font-size .05s linear;
+    	-moz-transition: font-size .05s linear;  
+    	-o-transition: font-size .05s linear;  
+    	-ms-transition: font-size .05s linear;  
+    	transition: font-size .05s linear;
 }
 @media screen and (min-width: 600px){body{font-size: 1.3vw;}}
 p{font-size: 1.3vw;}
@@ -44,10 +44,6 @@ a:hover{color: #FF6868; cursor: pointer}
 /* Button Controlled Expand Collapse */
 .divVisible {display:block;}
 .divHidden {display:none;}
-
-/* Resume Section Expand Collapse */
-.divVisible2{display:block;}
-.divHidden2 {display:none;}
 
 /* Modal Box */
 .modalDialog {
@@ -74,18 +70,18 @@ a:hover{color: #FF6868; cursor: pointer}
 	right: 1%;
 	background: #90A8A8;
 	color: #FFFFFF;
-    width: 4vw;
-    height: 4vw;
-    line-height: 4vw;
-    position: absolute;
-    border: 0;
+    	width: 4vw;
+    	height: 4vw;
+    	line-height: 4vw;
+    	position: absolute;
+    	border: 0;
 	text-align: center;
 	text-decoration: none;
-    font-size: 1.15em;
+    	font-size: 1.15em;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
-    -o-border-radius: 50%;
-    -ms-border-radius: 50%;
+    	-o-border-radius: 50%;
+    	-ms-border-radius: 50%;
 	border-radius: 50%;
 }
 .close:hover { background: #FFB8B8; color: #FFFFFF;}
@@ -103,7 +99,19 @@ Main Container
 /* --------------------------
 Header
 --------------------------*/
-header img {width: 75%; border: none;}
+header img {
+    	display: inline-block;
+ 	max-width: 14%;
+    	height: auto; 
+    	border: none; 
+    	float: left; 
+    	padding: 0 2% 0 0;
+}
+header a {color: #90A8A8;}
+header a:hover {color: #FF9090; cursor: pointer;}
+.logo_1 {display: inline-block; font-size: 500%; margin-top: 0; padding: 0;}
+.logo_2 {display: inline-block; font-size: 200%; margin: 0 0 2% 0; padding: 0;}
+
 
 /* --------------------------
 Circle Buttons
@@ -113,20 +121,20 @@ Circle Buttons
 #cb li a {display: block; margin: 0 auto;}
 #cb li button {display: block; margin: 0 auto;}
 .round-button{
-    width: 10vw;
-    height: 10vw;
-    border: 0;
-    border-radius: 50%;
-    text-align:center;
-    white-space: nowrap;
-    font-style: bold;
-    font-size: 1.5vw;
+    	width: 9vw;
+    	height: 9vw;
+    	border: 0;
+    	border-radius: 50%;
+    	text-align:center;
+    	white-space: nowrap;
+    	font-style: bold;
+    	font-size: 1.5vw;
 	color: #FFFFFF;
 	-webkit-transition: font-size .05s linear;  
-    -moz-transition: font-size .05s linear;  
-    -o-transition: font-size .05s linear;  
-    -ms-transition: font-size .05s linear;  
-    transition: font-size .05s linear;
+    	-moz-transition: font-size .05s linear;  
+    	-o-transition: font-size .05s linear;  
+    	-ms-transition: font-size .05s linear;  
+    	transition: font-size .05s linear;
 }
 @media screen and (min-width: 800px){ .round-button{font-size: 1.5vw;}}
 @media screen and (min-width: 800px){ #cb button{font-size: 1.5vw;}}
@@ -135,7 +143,7 @@ Circle Buttons
 #c3 button{background: #E0F0F0; color: #607878;}
 
 /* Turn shades of papaya on hover*/
-#c1 button:hover, #c5 button:hover{cursor: pointer; background: #FF6868;}
+#c1 button:hover, #c5 button:hover{cursor: pointer; background: #FF9090;}
 #c2 button:hover, #c4 button:hover{cursor: pointer; background: #FFB8B8; color: #FFFFFF;}
 #c3 button:hover{cursor: pointer; background: #FFE8E8; color:#FF6868;}
 
@@ -149,33 +157,33 @@ FooWhat Section
  --------------------------*/
 /* About Me Container */
 #about_me{
-    overflow: hidden;
-    height: 100%;
-    position: relative;
-    z-index: 0;
+    	overflow: hidden;
+    	height: 100%;
+    	position: relative;
+    	z-index: 0;
 }
 #about_me_1, #about_me_2{overflow: hidden;}
 #about_me_2{position: relative; width: 90%; margin: auto auto;}
 
 /* Create World Map Buttons */
 #about_me_2 a{
-    display:block;
-    width: 3vw;
-    height: 3vw;
-    line-height: 3vw;
-    border: 0;
-    border-radius: 50%;
+    	display:block;
+    	width: 3vw;
+    	height: 3vw;
+    	line-height: 3vw;
+    	border: 0;
+    	border-radius: 50%;
 	text-decoration: none;
-    text-align:center;
-    font-size: 1.3vw;
-    font-style: bold;
-    background: #C0D8D8;
-    color: #607878;
+    	text-align:center;
+    	font-size: 1.3vw;
+    	font-style: bold;
+    	background: #C0D8D8;
+    	color: #607878;
 	-webkit-transition: font-size 400ms  linear;  
-    -moz-transition: font-size 400ms  linear;  
-    -o-transition: font-size 400ms linear;  
-    -ms-transition: font-size 400ms  linear;  
-    transition: font-size 400ms linear;
+    	-moz-transition: font-size 400ms  linear;  
+    	-o-transition: font-size 400ms linear;  
+    	-ms-transition: font-size 400ms  linear;  
+    	transition: font-size 400ms linear;
 }
 @media screen and (min-width: 800px){ #about_me_2 a{font-size: 1.3vw;}}
 #about_me_2 a:hover {background: #FFB8B8; color: #FFFFFF;}
@@ -184,49 +192,7 @@ FooWhat Section
 #map_3b a{position: absolute; z-index: 1; top: 33%; right: 21%;}
 #map_4b a{position: absolute; z-index: 1; bottom: 20%; left: 15%;}
 #map_5b a{position: absolute; z-index: 1; top: 13%; right: 35%;}
-#map_6b a{position: absolute; z-index: 1; top: 19%; right: 40%;}
-
-/* --------------------------
- Resume Section
- --------------------------*/
-#resume img {width: 100%;}
-#res_1, #exp_1 {width: 100%; text-align: right;}
-#tools, #exp, #ed  {
-    width: 100%; 
-    border: none;
-    padding-top: 2vw; 
-    overflow: hidden;
-}
-#tools a, #exp h4 {float: right; padding-right: 2.5vw; margin: 0;}
-#tools:hover a, #exp:hover h4{color: #FF6868;}
-#tools a{
-    background: url('images/download_arrow_mint.png');
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: 1.5vw 1.5vw;
-}
-#tools:hover a{ 
-    background-image: url('images/download_arrow_papaya.png');
-    cursor: pointer;
-}
-#exp h4{
-    background: url('images/expand_arrow_mint3.png');
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: 1.5vw 1.5vw;
-}
-#exp:hover h4{ 
-    background-image: url('images/expand_arrow_papaya3.png');
-    cursor: default;
-}
-#col_1 {width: 16%; padding-left: 1vw; float: left; overflow: hidden;}
-#col_2 {width: 80%; padding-left: 1vw; float: left; overflow: hidden;}
-#col_a {width: 10vw; float: left;}
-#col_b {overflow: hidden;}
-#exp #col_2 b{font-size: 1.5vw; color: #607878;}
-#exp #col_2 b:hover{color: #FF6868; cursor: pointer;}
-#exp_1 b {cursor: default;}
-#sim a {font-size: 1.5vw;}
+#map_6b a{position: absolute; z-index: 1; top: 25%; right: 40%;}
 
 /* --------------------------
 Portfolio Section
@@ -235,34 +201,38 @@ Portfolio Section
 #portfolio b:hover {color: #FF6868; cursor: pointer;}
 #sample_1, #sample_2{overflow: hidden;}
 #sample_1, #sample_2{ 
-    border: 3px solid #E0F0F0;
-    -webkit-border-radius: 0.5vw;
-    -moz-border-radius: 0.5vw;
-    -o-border-radius: 0.5vw;
-    -ms-border-radius: 0.5vw;
-    border-radius: 0.5vw;
+    	border: 3px solid #E0F0F0;
+    	-webkit-border-radius: 0.5vw;
+    	-moz-border-radius: 0.5vw;
+    	-o-border-radius: 0.5vw;
+    	-ms-border-radius: 0.5vw;
+    	border-radius: 0.5vw;
 }
-#sample_1:hover, #sample_2:hover{ border: 3px solid #FFB8B8;}
+#sample_1:hover, #sample_2:hover{ 
+    	border: 3px solid #FFB8B8;
+}
 #s1a, #s2a {width: 74%; float: left;}
 #s1b, #s2b {width: 24%; float: right;}
 #s1b p, #s2b p {text-align: center; color: #607878}
 #sample_1:hover p, #sample_2:hover p {color: #FF6868;}
+
+
 #portfolio .gist div{ border: none;}
 #portfolio .gist-syntax{
-    background: #FFFFFF;
-    font-size: 1.15vw;
-    color: #607878;
-    height: 25vw;
+    	background: #FFFFFF;
+    	font-size: 1.25vw;
+    	color: #607878;
+    	height: 25vw;
 }
 #portfolio .line-numbers {
-    background: #FFFFFF;
-    border: none;
-    color: #607878;
+    	background: #FFFFFF;
+    	border: none;
+    	color: #607878;
 } 
 #portfolio .gist-meta {
-    background: #FFFFFF;
-    color: #607878;
-    height: 5px;
+    	background: #FFFFFF;
+    	color: #607878;
+    	height: 5px;
 }
 #portfolio .gist-meta a{color: #607878;}
 #portfolio .gist-meta a:hover{color: #FF6868;}
@@ -274,102 +244,114 @@ Portfolio Section
 Contact Section
  --------------------------*/
 #contact {
-    width:100%;
-    padding:0%;
-    margin: 0% auto;   
+	width:100%;
+	padding:0%;
+	margin: 0% auto;   
 }
 #sweet_captcha{
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    padding-bottom: 3%;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 3%;
 }
-#puzzle{ max-width: 300px; margin: auto auto;}
+#puzzle{
+	max-width: 300px;
+	margin: auto auto;
+}
 #contact_form{
-    display: inline-block;
-    width: 100%;
-    height: 100%;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
 }
 #contact input, #contact textarea {
-    border: none;
-    padding: 1%;
-    margin: 0.5% auto;
-    -webkit-border-radius: 0.5vw;
-    -moz-border-radius: 0.5vw;
-    -o-border-radius: 0.5vw;
-    -ms-border-radius: 0.5vw;
-    border-radius: 0.5vw;
-    -webkit-box-shadow:none;
-    -moz-box-shadow:none;
-    -o-box-shadow:none;
-    -ms-box-shadow:none;
-    box-shadow:none;
-    float: right;
+	border: none;
+	padding: 1%;
+	margin: 0.5% auto;
+	-webkit-border-radius: 0.5vw;
+	-moz-border-radius: 0.5vw;
+	-o-border-radius: 0.5vw;
+	-ms-border-radius: 0.5vw;
+	border-radius: 0.5vw;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	-o-box-shadow:none;
+	-ms-box-shadow:none;
+	box-shadow:none;
+	float: right;
 }
-#puzzle input{ width:40%; background: #F5F5F5; color: #000000;}
+#puzzle input{
+	width:40%;
+	background: #F5F5F5; 
+	color: #000000;  
+}
 #puzzle input:hover{background: #FFB8B8; color: #FFFFFF;cursor: pointer;}
 #contact_form input, #contact_form textarea {
-    width:98%;
-    background: #E0F0F0; 
-    color: #607878; 
-    font-family: "Lucida Sans", Lucida, sans-serif;
-    font-weight: normal;
-    font-size: 1.3vw;     
+	width:98%;
+	background: #E0F0F0; 
+	color: #607878; 
+	font-family: "Lucida Sans", Lucida, sans-serif;
+	font-weight: normal;
+	font-size: 1.3vw;     
 }
 #contact_form input:focus, #contact_form textarea:focus {
-    width:98%;
-    background: #FFE8E8; 
-    color: #607878;      
+	width:98%;
+	background: #FFE8E8; 
+	color: #607878;      
 }
 #contact_form #submit {
-    width: 25%;
-    background: #C0D8D8;
-    color:#607878;  
-    border:none;
-    margin-bottom: 3%;
+	width: 25%;
+	background: #C0D8D8;
+	color:#607878;  
+	border:none;
+	margin-bottom: 3%;
 }
 #contact_form #submit:hover { 
-    background: #FFB8B8; 
-    color: #FFFFFF; 
-    cursor: pointer;
+	background: #FFB8B8; 
+	color: #FFFFFF; 
+	cursor: pointer;
 }
 ::-webkit-input-placeholder { color: #607878;}
 :-ms-input-placeholder { color: #607878;}
 ::-moz-placeholder { color: #607878;}
 :-moz-placeholder { color: #607878;}
 
+
 /* --------------------------
 Footer
 --------------------------*/
 footer{margin: 0% auto; padding-bottom: 2%;}
 #soc_icons{
-    padding: 0; 
-    display: table; 
-    width: 100%;
-    position:relative;
+	padding: 0; 
+	display: table; 
+	width: 100%;
+	position:relative;
 }
 #soc_icons li {display: table-cell; vertical-align: middle; }
 #soc_icons li button {
-    display: block; 
-    margin: 0 auto; 
-    background: #90A8A8; 
-    width: 100%;
+	display: block; 
+	margin: 0 auto; 
+	background: #90A8A8; 
+	width: 100%;
 }
 #soc_icons img{width: 100%; vertical-align: middle;}
 #soc_icons .soc-button{
 	display: block;
-    width: 4vw;
-    height: 4vw;
-    line-height: 2vw;
-    border: 0;
-    border-radius: 50%;
-    text-align:center;
-    white-space: nowrap;
-    position: relative;
+    	width: 4vw;
+	height: 4vw;
+	line-height: 2vw;
+	border: 0;
+	border-radius: 50%;
+	text-align:center;
+	white-space: nowrap;
+	position: relative;
 }
-#soc_icons button:hover{background: #FF6868; cursor: pointer;}
+#soc_icons button:hover{background: #FF9090; cursor: pointer;}
 #soc_icons p{font-weight: bold; font-size: 85%;text-align: center;}
 #soc_icons a{color: #90A8A8;}
-#soc_icons a:hover{color: #FF6868;	cursor: pointer;}
+#soc_icons a:hover{color: #FF9090;	cursor: pointer;}
 #s3 a{font-style: bold; font-size: 110%; text-align: center;}
 #s3 {width: 40%; white-space: nowrap;}
+
+
+
+
