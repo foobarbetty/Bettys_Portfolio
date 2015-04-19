@@ -8,8 +8,7 @@ The term “FooBar" is an impromptu variable name often used in Computer Science
 
 Have fun exploring this repository! Please reach out and "Say Hello", if you have questions, suggestions or would simply like to connect!
 
-Elisabete
+Betty
 
-foobarbetty.com
-
+foobarbetty.com   
 twitter.com/Elisabete
